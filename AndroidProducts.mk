@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_zatab.mk
+    $(LOCAL_DIR)/full_cubieboard.mk

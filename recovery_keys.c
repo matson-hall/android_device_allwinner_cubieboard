@@ -7,7 +7,7 @@
 #include "common.h"
 #include "extendedcommands.h"
 
-static int zatab_batch_number(void) {
+static int cubieboard_batch_number(void) {
     char name[100];
 
     FILE* fp = fopen("/sys/class/input/event3/device/name", "r");
@@ -42,7 +42,7 @@ int device_handle_key(int key_code, int visible) {
     if (!visible)
         return NO_ACTION;
 
-    switch (zatab_batch_number()) {
+    switch (cubieboard_batch_number()) {
         /* ZaTab batch 1 */
         case 1: switch (key_code) {
             case KEY_HOME: // VOL-
