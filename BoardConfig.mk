@@ -18,6 +18,10 @@
 # Use the part that is common between all allwinner
 include device/allwinner/common/BoardConfig.mk
 
+# Stops compiler from complaining about arch type
+TARGET_CPU_VARIANT := cortex-a8
+TARGET_ARCH := arm
+
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/allwinner/cubieboard/recovery_keys.c
 
 TARGET_KERNEL_CONFIG := cubieboard_defconfig
